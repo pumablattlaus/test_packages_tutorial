@@ -6,7 +6,7 @@ depends:
 - rospy
 - rostest
 - catkin
-description: The load_param package
+description: The test_packages_tutorial package
 license: TODO
 maintainers: rosmatch <rosmatch@todo.todo>
 msgs: []

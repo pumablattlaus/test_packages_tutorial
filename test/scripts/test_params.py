@@ -12,4 +12,4 @@ class ParamsTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-	rostest.rosrun('load_param', 'test_params', ParamsTestCase)
+	rostest.rosrun('test_packages_tutorial', 'test_params', ParamsTestCase)

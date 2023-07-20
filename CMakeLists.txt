@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(load_param)
+project(test_packages_tutorial)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -102,7 +102,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES load_param
+#  LIBRARIES test_packages_tutorial
 #  CATKIN_DEPENDS rospy
 #  DEPENDS system_lib
 )
@@ -120,7 +120,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/load_param.cpp
+#   src/${PROJECT_NAME}/test_packages_tutorial.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -131,7 +131,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/load_param_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/test_packages_tutorial_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -195,7 +195,7 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_load_param.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_test_packages_tutorial.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
@@ -208,6 +208,6 @@ if (CATKIN_ENABLE_TESTING)
 
   # catkin_download_test_data()
 
-  add_rostest(test/load_param.test)
+  add_rostest(test/test_packages_tutorial.test)
 #   add_rostest(tests/your_rostest.test ARGS arg1:=true arg2:=false)
 endif()

@@ -1,4 +1,4 @@
 <launch>
-	<arg name="param_file" default="$(find load_param)/config/param.yaml" />
+	<arg name="param_file" default="$(find test_packages_tutorial)/config/param.yaml" />
 	<rosparam command="load" file="$(arg param_file)" />
 </launch>
