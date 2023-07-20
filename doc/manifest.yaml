@@ -1,0 +1,16 @@
+actions: []
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- rospy
+- rostest
+- catkin
+description: The load_param package
+license: TODO
+maintainers: rosmatch <rosmatch@todo.todo>
+msgs: []
+package_type: package
+repo_url: ''
+srvs: []
+url: ''

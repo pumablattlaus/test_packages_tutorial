@@ -1,0 +1,4 @@
+<launch>
+	<arg name="param_file" default="$(find load_param)/config/param.yaml" />
+	<rosparam command="load" file="$(arg param_file)" />
+</launch>
