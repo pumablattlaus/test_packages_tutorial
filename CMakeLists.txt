@@ -208,6 +208,6 @@ if (CATKIN_ENABLE_TESTING)
 
   # catkin_download_test_data()
 
-  add_rostest(test/test_packages_tutorial.test)
+  add_rostest(test/load_param.test)
 #   add_rostest(tests/your_rostest.test ARGS arg1:=true arg2:=false)
 endif()

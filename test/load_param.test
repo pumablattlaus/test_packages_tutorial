@@ -1,5 +1,5 @@
 <launch>
-	<include file="$(find test_packages_tutorial)/launch/test_packages_tutorial.launch">
+	<include file="$(find test_packages_tutorial)/launch/load_param.launch">
 		<arg name="param_file" value="$(find test_packages_tutorial)/config/param.yaml" />
 	</include>
 	<test test-name="test_packages_tutorial_test" pkg="test_packages_tutorial" type="test_params.py" />
