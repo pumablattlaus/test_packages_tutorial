@@ -33,3 +33,18 @@ rostest test_packages_tutorial load_param.test
 ```
 
 For changing how and when github is testing the package: Modify [ci-focal-action.yml](.github/workflows/ci-focal-action.yml)
+
+### New TestCases
+- New Test Cases can be added in [test_params.py](test_packages_tutorial/test/scripts/test_params.py), using unittest or by creating a new test_node.
+- A launch file for testing has to be created (example: [load_param.test](test_packages_tutorial/test/load_param.test)).
+Modify CMakeLists.txt for testing:
+```
+if (CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
+
+  # catkin_download_test_data()
+
+  add_rostest(test/load_param.test)
+#   add_rostest(tests/your_rostest.test ARGS arg1:=true arg2:=false)
+endif()
+```
